@@ -1,3 +1,11 @@
+:root {
+  --color-secondary: white;
+}
+
+:root body.dark-mode{
+  --color-secondary: purple;
+}
+
 html {
     font-size: 16px;
     line-height: 1.5;
@@ -190,7 +198,6 @@ body.dark-mode .header__btn.btn--open {
     border-radius: 3px 3px 30px 3px;
     margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: 5px 5px 0 1px var(--color-secondary), 10px 10px 0 1px #fff;
   }
   
   .hero__img img {
@@ -401,3 +408,140 @@ body.dark-mode .header__btn.btn--open {
     margin: 0;
     color: purple;
   }
+
+  /* Contact */
+.label__input {
+  background-color: #dfdfdf;
+  border-radius: 3px 3px 15px 3px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.label__input input {
+  background-color: #dfdfdf;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.contact__form textarea {
+  background-color: #dfdfdf;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 20px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.contact__btn {
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 3px 3px 15px 3px;
+  text-transform: uppercase;
+  background-color: purple;
+  color: white;
+}
+
+body.dark-mode .contact__btn {
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 3px 3px 15px 3px;
+  text-transform: uppercase;
+  background-color: white;
+  color: purple;
+}
+
+/*ABOUT*/
+.wrapper{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ul li.itemsocial{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: #e59500;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10 gray;
+}
+
+ul li.itemsocial i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+ul li.facebook{
+  background-color: #3b5998;
+}
+ul li.facebook div.slider{
+  background-color: #3b5998;
+}
+ul li.twitter{
+  background-color: #00aced;
+}
+ul li.twitter div.slider{
+  background-color: #00aced;
+}
+ul li.instagram{
+  background-color: #c71755;
+}
+
+ul li.instagram div.slider{
+  background-color: #c71755;
+}
+ul li.whatsapp{
+  background-color: #62e03f;
+}
+
+ul li.whatsapp div.slider{
+  background-color: #62e03f;
+}
+
+.slider{
+  content: "";
+  position: relative;
+  top: 0;
+  left: 51px;
+  width: 0px;
+  height: 50px;
+  background-color: #e59500;
+  border-radius: 3px;
+  transition: all 0.5s 0.3s ease;
+}
+.slider p{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+}
+
+ul li:hover .slider{
+  width: 180px;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .slider p{
+  opacity: 1;
+}
+
+.contenedor {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
